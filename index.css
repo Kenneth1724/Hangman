@@ -60,3 +60,14 @@ a{
 	display: flex;
 	justify-content: space-between;
 }
+
+.hangmantxt{
+	text-align: center;
+	color: white;
+	padding-right: 20px;
+	margin-left: 150px;
+}
+
+.hangmanpic{
+	margin-right: 150px;
+}
