@@ -17,7 +17,9 @@ function hangman(){
 }
 
 function userCheck(){
+ const user = <input type="text"></input>
 
-
-
+  return user
 }
+
+
