@@ -1,0 +1,62 @@
+body{
+	background-color: rgb(227, 227, 203);
+}
+
+.topbar{
+	background-color: rgb(69, 113, 69);;
+	align-items: center;
+	padding: 10px 30px;
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+}
+
+a{
+	font-size: 17px;
+	color: white;
+	padding-right: 60px;
+}
+
+
+.navigation{
+	color: white;
+}
+
+.text{
+	text-align: center;
+	color: white;
+}
+
+
+.logobox{
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	margin-right: 10px;
+	height: 50px;
+	width: 50px;
+}
+
+.bottombox{
+	box-shadow: 2px 2px 30px black;
+	border: 2px solid black;
+	background-color: rgb(227, 227, 203);
+	height: 400px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 60px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-image: url(../../resources/paper.jpg);
+	background-position: center;
+	background-size: 1450px;
+	background-repeat: no-repeat;
+}
