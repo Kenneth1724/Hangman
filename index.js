@@ -1,4 +1,3 @@
-
 function random(word){
     const randomIndex = Math.floor(Math.random() * word.length);
     return word[randomIndex];
@@ -18,7 +17,3 @@ function hangman(){
 }
 
 function userCheck(){
-
-
-    
-}
