@@ -28,8 +28,6 @@ a{
 .text{
 	text-align: center;
 	color: white;
-	padding-right: 20px;
-	margin-left: 150px;
 }
 
 
@@ -52,14 +50,9 @@ a{
 	margin-top: 40px;
 	margin-left: 40px;
 	margin-right: 40px;
-	padding: 20px;
+	padding: 60px;
 	align-items: center;
 	display: flex;
-	justify-content: space-between;
-}
-
-.hangmanpic{
-	width: 300px;
-	height: 300px;
-	box-shadow: 12px 12px black;
+	flex-direction: column;
+	text-align: center;
 }
