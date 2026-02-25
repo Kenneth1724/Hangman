@@ -17,3 +17,7 @@ function hangman(){
 }
 
 function userCheck(){
+
+
+
+}
