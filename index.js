@@ -29,21 +29,23 @@ function userCheck(){
 
 
 function sumbit_button(){
-
+const user_input = getElement
 
 }
 
 
 
-def toDashes(list){
+function toDashes(){
   new_list = []
   for (let i = 0; i< selectWord,length; i++){
-    if selectWord[i] === " ":{
-        displayWord.push(" ");
+    if (selectWord[i] === " "){
+      displayWord.push(" ");
     }
+  
     else{
       displayWord.push("_");
     }
-  document.getElementByClassName("hangman
-
+  }
+  document.getElementByClassName("hangmantxt")[1].innerHTML = displayWord.join(" ")
+  }
 
