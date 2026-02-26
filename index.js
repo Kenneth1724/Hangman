@@ -1,5 +1,8 @@
-let guess = 0
-
+let selectWord = choosePhrase()
+let wrong_guess = 0;
+let max_Guess = 6;
+let new_list = [];
+let guessed_letter = [];
 
 function random(word){
     const randomIndex = Math.floor(Math.random() * word.length);
@@ -32,28 +35,15 @@ function sumbit_button(){
 
 
 
-function toDashes(list){
+def toDashes(list){
   new_list = []
-  for (letters in list){
-    if (letters != " "){}
-      new_list.append("_")
-  }
-    else{
-      new_list.append(" ")
+  for (let i = 0; i< selectWord,length; i++){
+    if selectWord[i] === " ":{
+        displayWord.push(" ");
     }
-  
-  return new_list
-  }
+    else{
+      displayWord.push("_");
+    }
+  document.getElementByClassName("hangman
 
 
-
-function updateGameData(letter, dashes, phrase, guessLeft){
-  for (i in range(len(phrase))){
-    if (phrase[i] == letter){
-      dashes[i] = letter}
-  }
-  if (letter not in phrase){
-    guessLeft -=  1}
-
-  return dashes, guessLeft
-}
