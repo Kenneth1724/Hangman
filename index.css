@@ -81,3 +81,10 @@ a{
   background-color: rgb(69, 113, 69);
   box-shadow: 2px 2px 30px black;
 }
+
+
+#word{
+  display: flex;
+  text-align: center;
+  color: black;
+}

@@ -9,43 +9,28 @@ function random(word){
     return word[randomIndex];
 }
 function choosePhrase(){
-  phrase_list = ['vertical','temple','shark', 'lighter', 'lebron james', 'confusion', 'goat', 'horse']
+  phrase_list = ['vertical','temple','shark', 'lighter', 'lebron james', 'confusion', 'goat', 'horse', 'hello world', 'capybara']
   phrase_list = (random(phrase_list))
   console.log(phrase_list)
   return phrase_list
 }
 
 
-function hangman(){
-
-
-
-}
-
-function userCheck(){
- const user = <input type="text"></input>
-  return user
-}
-
-
-function sumbit_button(){
-const user_input = getElement
-
-}
-
-
-
 function toDashes(){
   new_list = []
-  for (let i = 0; i< selectWord,length; i++){
+  for (let i = 0; i< selectWord.length; i++){
     if (selectWord[i] === " "){
-      displayWord.push(" ");
+      new_list.push(" ");
+      console.log('hi')
     }
   
     else{
-      displayWord.push("_");
+      console.log('bye')
+      new_list.push("_");
     }
-  }
-  document.getElementByClassName("hangmantxt")[1].innerHTML = displayWord.join(" ")
+  }console.log(new_list);
+  
+  return document.getElementById("word").textContent = new_list.join("");
   }
 
+toDashes();
