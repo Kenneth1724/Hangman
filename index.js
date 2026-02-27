@@ -26,7 +26,7 @@ function toDashes(){
   
     else{
       console.log('bye')
-      new_list.push("_");
+      new_list.push(" _ ");
     }
   }console.log(new_list);
   
@@ -34,3 +34,4 @@ function toDashes(){
   }
 
 toDashes();
+
