@@ -41,7 +41,7 @@ const hangman_pic = [
 ]
 
 function update_pic(){
-  const hangman = document.getElementsByClassName("hangmanpic")[];
+  const hangman = document.getElementsByClassName("hangmanpic")[0];
   const pic = hangman.getElementsByTagName("img")[0];
 
   pic.srs = hangman_pic[wrong_guess];
@@ -49,7 +49,7 @@ function update_pic(){
 
 
 function submit_button(){
-  const input_ele = document.getElementsById("user_input");
+  const input_ele = document.getElementById("user_input");
   const userInput = input_ele.value.toLowerCase();
 
   input_ele.value = " "
@@ -63,8 +63,24 @@ function submit_button(){
     return;
   }
 
-gussedLetters.push(userInput)
+ guessed_letter.push(userInput)
 
-let Guess = false;
-
+ let guess = false;
+ for (let i = 0; i< selectWord.length; i++){
+    if(selectWord[i] === userInput){
+      new_list[i] = userInput
+      guess = true;
+  }
+  }
+  if(!guess){
+    wrong_guess++;
+    update_pic();
+  }
+  document.getElementsByClassName("hangmantxt")[0].innerHTML = new_list.join(" ");
+  if(new_list.join("") === selectWord){
+    alert("YOU Win")
+  }
+  if(wrong_guess >= max_Guess){
+    alert("You lose the word was :" + selectWord);
+  }
 }
