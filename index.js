@@ -9,7 +9,7 @@ function random(word){
     return word[randomIndex];
 }
 function choosePhrase(){
-  phrase_list = ['vertical','temple','shark', 'lighter', 'lebron james', 'confusion', 'goat', 'horse', 'hello world', 'capybara']
+  phrase_list = ['vertical','temple','hungry sharks', 'lighter', 'lebron james', 'confusion', 'microwave', 'xylophone', 'hello world', 'capybara', 'nymph', 'crystallize', 'acknowledge', 'australian shepard', 'nightingale', 'chicken turtle']
   phrase_list = (random(phrase_list))
   console.log(phrase_list)
   return phrase_list
