@@ -41,14 +41,14 @@ const hangman_pic = [
 ]
 
 function update_pic(){
-  const hangman = document.getElementsByClassName("hanghmanpic")[];
+  const hangman = document.getElementsByClassName("hangmanpic")[];
   const pic = hangman.getElementsByTagName("img")[0];
 
-  pic.srs = hangmanan_pic[wrong_guess];
+  pic.srs = hangman_pic[wrong_guess];
 }
 
 
-function sumbit_button(){
+function submit_button(){
   const input_ele = document.getElementsById("user_input");
   const userInput = input_ele.value.toLowerCase();
 
