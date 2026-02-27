@@ -63,7 +63,8 @@ function submit_button(){
     return;
   }
 
+gussedLetters.push(userInput)
 
-
+let Guess = false;
 
 }
