@@ -35,3 +35,35 @@ function toDashes(){
 
 toDashes();
 
+const hangman_pic = [
+  "resources/hangman1.png", "resources/hangman2.png", "resources/hangman3.png", "resources/hangman4.png", "resources/hangman5.png", "resources/hangman6.png", "resources/hangman7.png"
+
+]
+
+function update_pic(){
+  const hangman = document.getElementsByClassName("hanghmanpic")[];
+  const pic = hangman.getElementsByTagName("img")[0];
+
+  pic.srs = hangmanan_pic[wrong_guess];
+}
+
+
+function sumbit_button(){
+  const input_ele = document.getElementsById("user_input");
+  const userInput = input_ele.value.toLowerCase();
+
+  input_ele.value = " "
+
+  if (userInput.length !==1){
+    alert("Enter one letter")
+    return;
+  }
+  if (guessed_letter == userInput){
+    alert("You already guess this letter")
+    return;
+  }
+
+
+
+
+}
