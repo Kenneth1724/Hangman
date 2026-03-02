@@ -44,31 +44,30 @@ function update_pic() {
     pic.src = hangman_pic[wrong_guess];
 }
 
-
-function submit_button(){
-  const input_ele = document.getElementById("user_input");
-  const userInput = input_ele.value.toLowerCase();
-
-  input_ele.value = " "
-
-  if (userInput.length !==1){
-    alert("Enter one letter")
-    return;
-  }
-  if if (guessed_letter.includes(userInput)) {
-    alert("You already guess this letter")
-    return;
-  }
-
- guessed_letter.push(userInput)
-
- let guess = false;
- for (let i = 0; i< selectWord.length; i++){
-    if(selectWord[i] === userInput){
-      new_list[i] = userInput
-      guess = true;
-  }
-  }
+function submit_button() {
+    const input_ele = document.getElementById("user_input");
+    const userInput = input_ele.value.toLowerCase().trim();
+    
+    input_ele.value = "";
+    
+    
+    if (guessed_letter.includes(userInput)) {
+        alert("You already guessed '" + userInput + "'");
+        return;
+    }
+    
+    guessed_letter.push(userInput);
+    
+    let guess = false;
+    for (let i = 0; i < selectWord.length; i++) {
+        if (selectWord[i].toLowerCase() === userInput) {
+            new_list[i] = userInput;
+            guess = true;
+        }
+    }
+    
+   document.getElementById("word").textContent = new_list.join(" ");
+    
   if(!guess){
     wrong_guess++;
     update_pic();
