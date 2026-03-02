@@ -30,21 +30,18 @@ function toDashes(){
     }
   }console.log(new_list);
   
-  return document.getElementById("word").textContent = new_list.join("");
+document.getElementById("word").textContent = new_list.join("");
   }
-
-toDashes();
 
 const hangman_pic = [
   "resources/hangman1.png", "resources/hangman2.png", "resources/hangman3.png", "resources/hangman4.png", "resources/hangman5.png", "resources/hangman6.png", "resources/hangman7.png"
 
 ]
 
-function update_pic(){
-  const hangman = document.getElementsByClassName("hangmanpic")[0];
-  const pic = hangman.getElementsByTagName("img")[0];
-
-  pic.srs = hangman_pic[wrong_guess];
+function update_pic() {
+    const hangman = document.getElementsByClassName("hangmanpic")[0];
+    document.querySelector(".hangmanpic img").src = hangman_pic[wrong_guess];  // Added " img"
+    pic.src = hangman_pic[wrong_guess];
 }
 
 
@@ -58,7 +55,7 @@ function submit_button(){
     alert("Enter one letter")
     return;
   }
-  if (guessed_letter == userInput){
+  if if (guessed_letter.includes(userInput)) {
     alert("You already guess this letter")
     return;
   }
@@ -76,7 +73,7 @@ function submit_button(){
     wrong_guess++;
     update_pic();
   }
-  document.getElementsByClassName("hangmantxt")[0].innerHTML = new_list.join(" ");
+ document.getElementById("word").textContent = new_list.join(" ");
   if(new_list.join("") === selectWord){
     alert("YOU Win")
   }
@@ -84,3 +81,11 @@ function submit_button(){
     alert("You lose the word was :" + selectWord);
   }
 }
+
+window.onload = function() {
+    selectWord = choosePhrase();
+    console.log("Word selected: " + selectWord); // For debugging
+    toDashes();
+    update_pic(); // Start with first image
+};
+
